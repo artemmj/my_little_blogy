@@ -1,0 +1,26 @@
+{
+    "python.pythonPath": "venv/bin/python",
+    "python.linting.pylintEnabled": false,
+    "python.linting.flake8Enabled": true,
+    "python.linting.enabled": true,
+    "editor.rulers": [80, 120],
+    "editor.fontFamily": "hack",
+    "editor.fontSize": 14.5,
+    "editor.cursorBlinking": "phase",
+    "editor.cursorSmoothCaretAnimation": true,
+
+    // Controls if quick suggestions should show up while typing
+    "editor.quickSuggestions": true,
+    // Controls if suggestions should be accepted with
+    // "Enter" - in addition to "Tab". Helps to avoid ambiguity between
+    // inserting new lines and accepting suggestions.
+    "editor.acceptSuggestionOnEnter": "off",
+    // Controls the delay in ms after which quick suggestions will show up.
+    "editor.quickSuggestionsDelay": 1500,
+    // Enable word based suggestions
+    "editor.wordBasedSuggestions": true,
+    // Enable parameter hints
+    "editor.parameterHints": true,
+    // Minimap off
+    "editor.minimap.enabled": false,
+}

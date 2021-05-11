@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<head>
+    <title>My little blogy</title>
+    <style>
+        .main {
+            border: 5px double black;
+            width: 800px;
+            padding: 16px;
+            background: rgb(238, 238, 238);
+        }
+    </style>     
+</head>
+<body>
+<div align="center">
+    <div class="main">
+        <a href="/">Домой</a> <br><br>
+        <div align="left" class="main">
+            <h3>{{ article.title }}</h3>
+            <h5>{{ article.text }}</h5>
+        </div>
+    </div>
+</div>
+</body>

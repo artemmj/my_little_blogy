@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<head>
+    <title>My little blogy</title>
+    <style>
+        .main {
+            width: 800px; /* Ширина элемента в пикселах */
+            padding: 16px; /* Поля вокруг текста */
+            background: rgb(238, 238, 238); /* Цвет фона */
+        }
+        .article {
+            border: 5px double black;
+            width: 600px; /* Ширина элемента в пикселах */
+            padding: 16px; /* Поля вокруг текста */
+            background: rgb(238, 238, 238); /* Цвет фона */
+        }
+    </style>     
+</head>
+<body>
+<div align="center">
+    <div class="main">
+        <header>
+        <div class="header-bg">
+            <h1>О бекенд разработке и т.п.</h1>
+        </div>
+        </header>
+
+        <main>
+        <div><a href="{% url 'articles' %}">Все статьи</a></div><br>
+        <div><a href="{% url 'about' %}">О сайте</a></div><br>
+        <div align="left" class="article">
+        <h4>Свежее</h4>======
+            {% for article in articles %}
+            <a href="/articles/{{ article.id }}/"><h4>{{ article.title }}</h4></a>
+            <div class="article">{{ article.text }}</div><br>
+            {% endfor %}
+        </div>
+        <br>
+        </main>
+
+        <footer>
+            Все права защищены, еба
+        </footer>
+    </div>
+</div>
+</body>
